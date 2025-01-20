@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0.8rem;
+
+    nav {
+        max-width: 600px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 2rem 2rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(219, 219, 219, 0.3);
+
+        h1 {
+            font-size: 44px;
+            text-transform: capitalize;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 2px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-shadow: 2px 2px 3px blue;
+
+            @media (max-width:450px) {
+                width: 100%;
+                font-size: 37px;
+            }
+        }
+
+        .label {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            font-size: 25px;
+            padding: 0 2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: 1.2rem 0 0 -1.9rem;
+            text-shadow: 1px 1px 2px blue;
+
+            @media (max-width:450px) {
+                font-size: 21px;
+            }
+        }
+
+        .input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid rgba(0, 0, 255, 0.516);
+            margin: 0.2rem 0 0.6rem -0.2rem;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(219, 219, 219, 0.1)
+        }
+
+        ::placeholder {
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            color: grey;
+
+            @media (max-width:450px) {
+                font-size: 12px;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.5rem 0;
+            margin: 2.5rem 0 0.5rem;
+            border-radius: 7px;
+            font-size: 25px;
+            letter-spacing: 2px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            border: none;
+            background: linear-gradient(to right, #001affc0, #0088ffdd, #001affca);
+            color: white;
+            transition-duration: 0.5s;
+            cursor: pointer;
+
+            @media (max-width:450px) {
+                font-size: 20px;
+                margin: 1.2rem 0 0.2rem;
+            }
+
+            &:hover {
+                transition-duration: 0.5s;
+                background-color: #001aff;
+                color: #0d023fed;
+                box-shadow: 4px 4px 6px #001affa7;
+            }
+        }
+
+        .butn {
+            width: 45%;
+            display: inline-block;
+            margin: 1.4rem 0.65rem -2rem;
+            padding: 0.6rem 0.9rem;
+            font-size: 20px;
+            justify-content: space-between;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            border-radius: 7px;
+            border: none;
+            background-color: #001affc6;
+            color: rgb(235, 235, 235);
+            transition-duration: 0.5s;
+
+            @media (max-width:650px) {
+                width: 90%;
+            }
+
+            @media (max-width:450px) {
+                width: 90%;
+                font-size: 15px;
+            }
+
+            &:hover {
+                transition-duration: 0.5s;
+                cursor: pointer;
+                box-shadow: 4px 4px 8px #001affa7;
+            }
+        }
+    }
+}
