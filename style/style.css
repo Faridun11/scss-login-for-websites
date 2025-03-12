@@ -32,6 +32,11 @@ header {
   justify-content: center;
   padding: 3rem 0.8rem;
 }
+@media (max-width: 450px) {
+  header {
+    margin: 6rem 0 0 0;
+  }
+}
 header nav {
   max-width: 600px;
   border: 1px solid grey;
